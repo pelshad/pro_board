@@ -1,0 +1,46 @@
+CREATE DATABASE pro_board;    
+                              
+CREATE TABLE t_board          
+(i_board INT unsigned not NULL AUTO_INCREMENT PRIMARY key,
+ title varCHAR(20) NOT NULL,  
+ ctnt varCHAR(1000) NOT null, 
+ id VARCHAR(20) NOT NULL,     
+ pw VARCHAR(10) not null DEFAULT 0000,
+ view INT DEFAULT 0,          
+ created_at DATETIME DEFAULT NOW());
+                              
+SELECT * FROM board;          
+DROP TABLE board;             
+                              
+CREATE DATABASE board_login_s;
+DROP DATABASE board_login;    
+                              
+CREATE TABLE t_user(          
+	i_user INT UNSIGNED AUTO_INEMENT PRIMARY KEY,
+	uid VARCHAR(20) UNIQUE NOT LL,
+	upw VARCHAR(30) NOT NULL,  
+	nm VARCHAR(5) NOT NULL,    
+	gender INT UNSIGNED NOT NULCHECK(gender IN (0,1)),
+	created_at DATETIME DEFAULTURRENT_TIMESTAMP,
+	updated_at DATETIME DEFAULTURRENT_TIMESTAMP);
+                              
+DROP TABLE t_board;           
+                              
+CREATE TABLE t_board(         
+	i_board INT UNSIGNED AUTO_IREMENT,
+	PRIMARY KEY(i_board),      
+	title VARCHAR(100) NOT NULL
+	ctnt VARCHAR(2000) NOT NULL
+	i_user INT UNSIGNED NOT NUL
+	created_at DATETIME DEFAULTURRENT_TIMESTAMP,
+	updated_at DATETIME DEFAULTURRENT_TIMESTAMP,
+	view_at INT DEFAULT 0,     
+	FOREIGN KEY (i_user) REFEREES t_user(i_user));
+	                           
+SELECT * FROM t_user;         
+SELECT * FROM t_board;        
+                              
+SELECT * FROM t_board WHERE i_board = 1;
+                              
+SELECT CEIL(COUNT(i_board)/10) AS cnt
+FROM t_board;

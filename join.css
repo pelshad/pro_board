@@ -1,0 +1,79 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration:none;
+    color:black;}
+
+
+fieldset {
+    display: block;
+    width:300px;
+    border-radius:10px;
+}
+
+
+/*form write*/
+.main{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+input.radio{
+    width:10px;
+    height:10px;
+    margin-left:20px;
+}
+
+input.radio:checked{
+    color:red;
+    width:12px;
+    height:12px;
+}
+
+input{
+    width: 150px;
+    height: 20px;
+    margin: 10px;
+}
+
+textarea{
+    margin:10px;
+}
+
+.sub{
+    display: inline-block;
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+    height:30px;
+}
+
+.sub:hover{
+    color:white;
+    background-color: black;    
+    border-radius: 10px;
+}
+
+form{
+    margin:0 auto;
+    display: inline-block;
+}
+
+.join{
+    font-size: 0.8rem;
+}
+
+/*form info*/
+.form2{
+    text-align: center;    
+}

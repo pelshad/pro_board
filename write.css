@@ -1,0 +1,111 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+
+/*form*/
+fieldset.write {
+    width:800px;
+    height:530px;
+    border-radius:10px;
+}
+
+.container{
+    margin-left: 50px;
+}
+
+input{
+    width: 150px;
+    height: 20px;
+    margin: 10px;
+}
+
+textarea{
+    margin:10px;
+}
+
+.sub{
+    display: inline-block;
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+    height:30px;
+}
+
+.sub:hover{
+    color:white;
+    background-color: black;    
+    border-radius: 10px;
+}
+
+form{
+    margin:0 auto;
+    display: inline-block;
+}
+
+textarea{
+    height:400px;
+    width:700px;
+    resize:none;
+}
+
+/* wirte */
+h2.write{
+    padding: 50px;
+    border:1px solid black;
+}
+
+
+/* info */
+h2.info{
+    margin: 0;
+}
+
+.title{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nm span{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 550px 1fr;
+}
+
+.divide{
+    border-bottom:1px solid black;
+    padding:10px;
+}
+
+textarea{
+    padding: 10px;
+}
+
+.form{
+    margin: 50px 0px;
+}
+
+.detail {
+    padding: 40px;
+    width:1000px;
+    height:700px;
+    border-radius:10px;
+    border:none;
+}
+
+.main a:hover{
+    background-color: rgb(124, 116, 116);
+    border-radius: 10px;
+}
+
+.main a{
+    padding:3px 20px;
+}
+

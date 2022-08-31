@@ -1,0 +1,158 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+a{
+    text-decoration: none;
+    color: black;}
+a:hover{
+    color:rgb(59, 46, 46);
+}
+a{
+    text-decoration:none;
+    color:black;}
+
+/* 레이아웃 */
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px minmax(900px, 1fr) ;
+    grid-template-rows: 150px 100px 1fr;
+    grid-template-areas:
+        "header header"
+		"id    main"
+		"side  main";
+}
+
+#container > div{
+    margin:5px;
+    border : 1px solid black;
+    border-radius: 10px;
+}
+
+.header{
+grid-area: header;
+}
+
+.id_box{
+    grid-area: id;
+    }
+
+.side_bar{
+    grid-area: side;
+}
+
+.main{
+    grid-area: main;
+}
+
+/* id_box */
+.id_box div{
+    margin:10px;
+    height: 40px;
+    border : 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+
+}
+.id_box .unlogin{
+    font-size: 0.8rem;
+}
+.id_box{
+    text-align: center;
+}
+
+.id_box > a{
+    padding:3px 20px;
+}
+
+.id_box > a:hover{
+    background-color: rgba(124, 116, 116, 0.8);
+    border-radius: 10px;
+}
+
+/* menu */
+ul{text-align: center;
+    font-size: 15px;}
+li{
+    padding:20px;
+}
+li:hover{
+    background-color: rgba(124, 116, 116, 0.8);
+    border-radius: 10px;
+}
+
+/* main frboard */
+h2.list{
+    margin-top:50px;
+    margin-left:50px;
+    margin-bottom:50px;
+}
+div.write:hover>a{
+    color:rgb(59, 46, 46);
+}
+
+table{
+  margin-left:50px;
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+    }
+
+table th{
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+    background-color: rgba(124, 116, 116, 0.8);
+      }
+
+table td:not(.title) {
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    }
+
+td.title:hover a{
+    text-decoration: underline;
+    }
+
+th.no{
+    width: 100px;
+}
+
+th.title{
+    width: 400px;
+}
+
+th.nm{
+    width:100px;
+}
+
+th.created{
+    width:200px;
+}
+
+th.view{
+    width:100px;
+}
+
+.write{
+    margin-right: 50px;
+    padding: 15px;
+    background-color: rgb(124, 116, 116);
+    display: inline-block;
+    border-radius: 10px;
+    }
+
+.write>a{
+    color: black;
+}
+
+div.table{
+    width: 1000px;
+}
+
+div.table{
+    text-align: end;
+}
